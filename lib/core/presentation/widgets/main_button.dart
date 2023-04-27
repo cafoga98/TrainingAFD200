@@ -16,16 +16,20 @@ class MainButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: onPressed,
-      child: Center(
-        child: Text(mainText),
-      ),
-      style: ButtonStyle(
-        backgroundColor:
-            MaterialStateProperty.all(colorBackGround ?? Colors.blue),
-        textStyle: MaterialStateProperty.all(
-          Theme.of(context).textTheme.bodySmall,
+    return SizedBox(
+      width: MediaQuery.of(context).size.width,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        child: Text(
+          mainText,
+          textAlign: TextAlign.center,
+        ),
+        style: ButtonStyle(
+          backgroundColor:
+              MaterialStateProperty.all(colorBackGround ?? Colors.blue),
+          textStyle: MaterialStateProperty.all(
+            Theme.of(context).textTheme.bodySmall,
+          ),
         ),
       ),
     );

@@ -33,6 +33,13 @@ class _HomePageState extends State<HomePage> {
                   '/count',
                 ),
               ),
+              MainButton(
+                mainText: '3. Ejercicio Pizzeria',
+                onPressed: () => Navigator.pushNamed(
+                  context,
+                  '/pizzeria',
+                ),
+              ),
             ],
           ),
         ),
