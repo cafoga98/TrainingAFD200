@@ -3,6 +3,7 @@ import 'package:grilles/core/constant/styles/text_styles.dart';
 import 'package:grilles/core/presentation/home_page.dart';
 import 'package:grilles/count/presentation/pages/page_count.dart';
 import 'package:grilles/grilles/presentation/pages/page_grilles.dart';
+import 'package:grilles/pizzeria/presentation/pages/bill.dart';
 import 'package:grilles/pizzeria/presentation/pages/menu.dart';
 import 'package:grilles/pizzeria/presentation/pages/order_here.dart';
 import 'package:grilles/pizzeria/presentation/pages/pizzeria_page.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         '/pizzeria': (context) => const PizzeriaPage(),
         '/menuPizza': (context) => const Menu(),
         '/order': (context) => const OrderHere(),
+        '/bill': (context) => const Bill(),
       },
     );
   }

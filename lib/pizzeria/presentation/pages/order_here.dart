@@ -125,7 +125,13 @@ class _OrderHereState extends State<OrderHere> {
             height: 20,
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(
+                context,
+                '/bill',
+                arguments: '${totalBill.toString()}00',
+              );
+            },
             child: const Text(
               'Pagar',
             ),
